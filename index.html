@@ -9,38 +9,69 @@
 </head>
 <body>
   <header class="topbar">
-    <a class="logo" href="#" data-page="Home">Larpblox</a>
+    <a class="brand" href="#" data-page="Home">
+      <img src="Logo.png" alt="Larpblox" class="site-logo">
+    </a>
+
     <nav class="topnav">
       <a href="#" data-page="Games">Games</a>
       <a href="#" data-page="Catalog">Catalog</a>
       <a href="#" data-page="Avatar">Avatar</a>
     </nav>
+
+    <form class="search" id="search-form">
+      <input id="site-search" type="search" placeholder="Search" aria-label="Search Larpblox">
+      <button type="submit" aria-label="Search">⌕</button>
+    </form>
+
     <div class="account" id="account-area"></div>
   </header>
 
-  <div class="layout">
-    <aside class="sidebar">
-      <div class="side-user" id="side-user">Welcome!</div>
-      <a href="#" data-page="Home">Home</a>
-      <a href="#" data-page="Profile">Profile</a>
-      <a href="#" data-page="Games">Games</a>
-      <a href="#" data-page="Catalog">Catalog</a>
-      <a href="#" data-page="Avatar">Avatar</a>
-      <div class="currency">
-        <strong>Larpbux</strong>
-        <div id="currency-count">0</div>
+  <div class="page-wrap">
+    <div class="subnav">
+      <span class="breadcrumb">Larpblox</span>
+      <span class="subnav-separator">›</span>
+      <span id="section-name">Home</span>
+    </div>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="side-user" id="side-user">Welcome, Guest!</div>
+
+        <div class="side-heading">PERSONAL</div>
+        <a href="#" data-page="Home"><span class="nav-icon">⌂</span> Home</a>
+        <a href="#" data-page="Profile"><span class="nav-icon">▣</span> Profile</a>
+        <a href="#" data-page="Avatar"><span class="nav-icon">♟</span> Avatar</a>
+
+        <div class="side-heading">DISCOVER</div>
+        <a href="#" data-page="Games"><span class="nav-icon">▶</span> Games</a>
+        <a href="#" data-page="Catalog"><span class="nav-icon">▦</span> Catalog</a>
+
+        <div class="side-heading">YOUR ACCOUNT</div>
+        <div class="currency">
+          <span class="currency-label">YOUR BALANCE</span>
+          <div class="currency-name">Larpbux</div>
+          <div id="currency-count">0</div>
+        </div>
+      </aside>
+
+      <main id="main-content">
+        <h1>Welcome to Larpblox!</h1>
+        <p>Your place to build, play, and explore.</p>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer-links">
+        <a href="#" data-page="Home">Home</a>
+        <a href="#" data-page="Games">Games</a>
+        <a href="#" data-page="Catalog">Catalog</a>
+        <a href="#" data-page="Profile">Profile</a>
       </div>
-    </aside>
-
-    <main id="main-content">
-      <h1>Welcome to Larpblox!</h1>
-      <p>Your place to build, play, and explore.</p>
-    </main>
+      <p>Larpblox is an independent fan-made project and is not affiliated with Roblox Corporation.</p>
+      <p>© Larpblox</p>
+    </footer>
   </div>
-
-  <footer>
-    Larpblox — A community-made revival project.
-  </footer>
 
   <script src="script.js"></script>
 </body>
